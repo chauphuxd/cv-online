@@ -1,15 +1,28 @@
 import Typewriter from "typewriter-effect";
-import SocialMedia from "../social.media";
+import SocialMedia from "components/sections/social.media";
 import { useTranslation } from "react-i18next";
 import './hero.scss';
-import ResizeButton from "../resize.button";
-import { APP_DATA } from '../../../helpers/data';
+import ResizeButton from "components/sections/resize.button";
+import { APP_DATA } from 'helpers/data';
 import { MdFileDownload } from "react-icons/md";
 import { AiFillFire } from "react-icons/ai";
 
-const HeroLeft = () => {
+interface IProps {
+    scrollToExperienceSection?: () => void
+}
 
+
+const HeroLeft = (props: IProps) => {
+
+    const { scrollToExperienceSection } = props
     const { t } = useTranslation();
+    const openInNewTab = (url: string): void => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+        if (newWindow) newWindow.opener = null
+    }
+    const handleDownloadCv = () => {
+        openInNewTab("https://drive.google.com/file/d/1py6BsFsTpomrQ_Xh-6LHA4IqNs22gwlw/view?usp=drive_link")
+    }
 
     return (
         <div className='hero-left'>
@@ -49,15 +62,18 @@ const HeroLeft = () => {
             </div>
             <div className="d-md-flex d-none gap-4">
                 <ResizeButton
+                    onClick={scrollToExperienceSection}
                     btnText={t("heroSection.exp")}
                     btnIcons={<AiFillFire style={{ color: "orange" }} />}
                     btnStyle={{
                         background: "unset",
                         border: "1px solid var(--border-hero-right)",
-                        color: "var(--text-white-1)"
+                        color: "var(--text-white-1)",
+
                     }}
                 />
                 <ResizeButton
+                    onClick={handleDownloadCv}
                     btnText={t("heroSection.cv")}
                     btnIcons={<MdFileDownload />}
                 />
