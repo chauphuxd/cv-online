@@ -21,7 +21,7 @@ const HeroLeft = (props: IProps) => {
         if (newWindow) newWindow.opener = null
     }
     const handleDownloadCv = () => {
-        openInNewTab("https://drive.google.com/file/d/1py6BsFsTpomrQ_Xh-6LHA4IqNs22gwlw/view?usp=drive_link")
+        openInNewTab("https://drive.google.com/file/d/1p7izcxQhZWS2XcTs93R1x29IdSTAkgpJ/view?usp=sharing")
     }
 
     return (
@@ -40,9 +40,7 @@ const HeroLeft = (props: IProps) => {
                 options={{
                     strings: [
                         "Software Developer",
-                        "Freelancer",
-                        "MERN Stack Developer",
-                        "Open Source Contributor",
+
                     ],
                     autoStart: true,
                     loop: true,

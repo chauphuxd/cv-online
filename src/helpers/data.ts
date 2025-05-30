@@ -6,127 +6,112 @@ import springMvcImg from 'assets/project/spring-mvc.png';
 import springRestImg from 'assets/project/spring-rest.png';
 // b1 import anh
 export const APP_DATA = {
-    YOUTUBE_URL: "https://www.youtube.com/@hoidanit",
-    TIKTOK_URL: "https://www.tiktok.com/@hoidanit",
-    UDEMY_URL: "https://www.udemy.com/user/eric-7039/",
-    FACEBOOK_URL: "https://www.facebook.com/askITwithERIC/"
+    YOUTUBE_URL: "",
+    TIKTOK_URL: "",
+    FACEBOOK_URL: "https://www.facebook.com/phu.tran.244255"
 }
 
 export const EXPERIENCES = [
     {
         id: 1,
+        duration: {
+            vi: "Tháng 5/2024 - Tháng 10/20240",
+            en: "May 2024 - Oct 2024"
+        },
         title: {
-            vi: "Lập Trình Viên",
-            en: "Fullstack Developer"
+            vi: "Phát triển phần mềm",
+            en: "Software Developer"
         },
         company: {
-            vi: "Công ty ABCXYZ Ltd.",
-            en: "ABCXYZ Ltd."
+            vi: "",
+            en: ""
         },
-        duration: {
-            vi: "Jan 2024 - Hiện tại",
-            en: "Jan 2024 - Present"
-        }
+        description: {
+            vi: [
+                "Phát triển và triển khai các thuật toán hiệu quả cho xử lý và phân tích dữ liệu",
+                "Áp dụng nguyên tắc Lập trình Hướng đối tượng để tạo mã nguồn module",
+                "Hợp tác với các lập trình viên cao cấp để tối ưu hóa truy vấn cơ sở dữ liệu",
+            ],
+            en: [
+                "Developed and implemented efficient algorithms for data processing and analysis",
+                "Applied Object-Oriented Programming principles to create modular and maintainable code",
+                "Collaborated with senior developers to optimize database queries",
+            ]
+        },
+        technologies: ["Data Structures", "Algorithms", "OOP", "Java", "SQL"]
     },
     {
         id: 2,
-        title: {
-            vi: "Lập Trình Viên",
-            en: "Fullstack Developer"
-        },
-
-        company: {
-            vi: "Công ty F (freelancer)",
-            en: "F (freelancer)"
-        },
         duration: {
-            vi: "Tháng 6/2022 - Tháng 1/2024",
-            en: "Jun 2022 - Jan 2024"
-        }
+            vi: "Tháng 10/2024 - Tháng 1/2025",
+            en: "Oct 2024 - Jan 2025"
+        },
+        title: {
+            vi: "Lập trình viên Frontend",
+            en: "Frontend Developer"
+        },
+        company: {
+            vi: "",
+            en: ""
+        },
+        description: {
+            vi: [
+                "Xây dựng giao diện người dùng responsive và tương tác sử dụng React.js",
+                "Phát triển các component tái sử dụng và duy trì thư viện component",
+                "Tối ưu hóa hiệu suất ứng dụng và cải thiện trải nghiệm người dùng"
+            ],
+            en: [
+                "Built responsive and interactive user interfaces using React.js",
+                "Developed reusable components and maintained component library",
+                "Optimized application performance and improved user experience"
+            ]
+        },
+        technologies: ["React.js", "TypeScript", "HTML5", "CSS3", "JavaScript"]
     },
     {
         id: 3,
+        duration: {
+            vi: "Tháng 2/2025 - Hiện tại",
+            en: "Feb 2025 - Present"
+        },
         title: {
-            vi: "Dự án tự làm",
-            en: "Self Employed"
+            vi: "Lập trình viên Backend",
+            en: "Backend Developer"
         },
         company: {
-            vi: "Học kiến thức mới mỗi ngày",
-            en: "Code and build something in everyday."
+            vi: "",
+            en: ""
         },
-        duration: {
-            vi: "Tháng 1/2020 - Hiện tại",
-            en: "Jan 2020 - Present"
-        }
-    },
-
-    //them kinh nghiem
-    // {
-    //     id: 4,
-    //     title: {
-    //         vi: "Dự án tự làm",
-    //         en: "Self Employed"
-    //     },
-    //     company: {
-    //         vi: "Học kiến thức mới mỗi ngày",
-    //         en: "Code and build something in everyday."
-    //     },
-    //     duration: {
-    //         vi: "Tháng 1/2020 - Hiện tại",
-    //         en: "Jan 2020 - Present"
-    //     }
-    //}
-]
+        description: {
+            vi: [
+                "Phát triển RESTful APIs sử dụng Spring Boot cho các ứng dụng",
+            ],
+            en: [
+                "Developed RESTful APIs using Spring Boot for enterprise applications",
+            ]
+        },
+        technologies: ["Java", "Spring Boot","Mysql", "REST APIs"]
+    }
+];
 
 export const PROJECTS = [
     {
         id: 1,
         imgPath: reactNativeImg,
-        title: "React Native Basic",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/react-native-ultimate-phat-trien-ung-dung-mobile-66e7ab4578aaf477418cb538.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/react-native-ultimate-phat-trien-ung-dung-mobile-66e7ab4578aaf477418cb538.html"
+        title: "Book WebSite",
+        description: "The online book selling website project is developed using React and TypeScript, providing a modern and convenient shopping experience for users. The website provides many features such as searching, filtering books by category, price range and sorting by popularity or price. Users can view product details, reviews, add to cart and checkout easily. With a friendly interface and high performance, the project aims to create a reliable and convenient online book shopping platform.",
+        githubLink: "https://github.com/chauphuxd/book-fe",
+        demoLink: "https://book-store-six-xi.vercel.app/"
     },
     {
         id: 2,
         imgPath: springRestImg,
-        title: "Java Spring REST",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/java-spring-rest-ultimate-for-beginners-6631cb577353ab6861b188f6.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/java-spring-rest-ultimate-for-beginners-6631cb577353ab6861b188f6.html"
+        title: "Laptop Shop",
+        description: "Developed an e-commerce website for selling laptops with key features such as product browsing, shopping cart, order placement, and order management. Integrated VNPAY payment gateway, enabling customers to make secure and fast online payments.Implemented Google login (OAuth2) to allow users to easily register and log in with their Google accounts.Built an Admin Dashboard for managing products, orders, and users efficiently.",
+        githubLink: "https://github.com/TranPhuDev/java-spring-mvc",
+        demoLink: "https://hotel-fe.dzfullstack.edu.vn/"
     },
-    {
-        id: 3,
-        imgPath: springMvcImg,
-        title: "Java Spring MVC",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/java-spring-mvc-ultimate-for-beginners-65ce0b770c05f4450fbd86ac.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/java-spring-mvc-ultimate-for-beginners-65ce0b770c05f4450fbd86ac.html"
-    },
-    {
-        id: 4,
-        imgPath: nextjsImg,
-        title: "React ProMax with Next.js",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/react-pro-max-voi-nextjs-lam-chu-toan-dien-reactjs-hien-dai-65198100e6bafa8caad417a6.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/react-pro-max-voi-nextjs-lam-chu-toan-dien-reactjs-hien-dai-65198100e6bafa8caad417a6.html"
-    },
-    {
-        id: 5,
-        imgPath: nestImg,
-        title: "Nest.js Basic",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/nestjs-voi-typescript-mongodb-sieu-de-64686ec6fb456bbb90663dd6.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/nestjs-voi-typescript-mongodb-sieu-de-64686ec6fb456bbb90663dd6.html"
-    },
-    {
-        id: 6,
-        imgPath: reactUltimateImg,
-        title: "React Ultimate",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/react-ultimate-react-co-ban-tu-z-toi-a-640b50b96cc592d780aab976.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/react-ultimate-react-co-ban-tu-z-toi-a-640b50b96cc592d780aab976.html"
-    }
+    
 ]
 
 export const SKILLS_DATA = [
@@ -134,22 +119,24 @@ export const SKILLS_DATA = [
     'CSS',
     'Javascript',
     'Typescript',
+    // 'PHP',
     'React',
-    'Next JS',
-    'Tailwind',
+    // 'Next JS',
+    // 'Tailwind',
     'MongoDB',
     'MySQL',
-    'PostgreSQL',
+    // 'PostgreSQL',
     'Git',
-    'AWS',
+    // 'Vue',
+    // 'AWS',
     'Bootstrap',
-    'Docker',
-    'Go',
+    // 'Docker',
+    // 'Go',
     'Figma',
-    'Firebase',
+    // 'Firebase',
     'MaterialUI',
-    'Nginx',
-    'Strapi'
+    // 'Nginx',
+    // 'Strapi'
   ]
   
   // Choose your skills from below. Make sure it's in the same format and spelled correctly.

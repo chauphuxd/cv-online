@@ -1,6 +1,6 @@
 {
     "appHeader": {
-        "brand": "Hỏi Dân IT",
+        "brand": "Trần Châu Phú",
         "home": "Trang chủ",
         "project": "Dự án",
         "contact": "Liên hệ",
@@ -8,7 +8,7 @@
     },
     "heroSection": {
         "exp": "Kinh nghiệm",
-        "cv": "Tải Resume"
+        "cv": "Tải CV"
     },
     "introSection": {
         "about": "Giới thiệu",

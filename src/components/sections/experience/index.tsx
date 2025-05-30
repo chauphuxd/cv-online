@@ -52,17 +52,36 @@ const Experience = () => {
                                                 <p className="company">{experience.company[currenLanguage]}</p>
                                             </div>
                                         </div>
+                                        <div className="description mt-3">
+                                            <ul className="list-unstyled">
+                                                {experience.description[currenLanguage].map((item, index) => (
+                                                    <li key={index} className="mb-2">
+                                                        <i className="fas fa-check-circle me-2"></i>
+                                                        {item}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                        <div className="technologies mt-3">
+                                            <div className="d-flex flex-wrap gap-2">
+                                                {experience.technologies.map((tech, index) => (
+                                                    <span
+                                                        key={index}
+                                                        className="badge bg-primary bg-opacity-10 text-primary px-3 py-2"
+                                                    >
+                                                        {tech}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </GlowCard>
                         ))
                     }
                 </div>
-
             </Col>
-
         </Row>
-
     )
 }
 
