@@ -1,9 +1,7 @@
-import nestImg from 'assets/project/nestjs.png';
-import nextjsImg from 'assets/project/nextjs.jpeg';
+
 import reactNativeImg from 'assets/project/react-native.png';
-import reactUltimateImg from 'assets/project/react-ultimate.png';
-import springMvcImg from 'assets/project/spring-mvc.png';
 import springRestImg from 'assets/project/spring-rest.png';
+import reactJsImg from 'assets/project/ReactJs.jpg';
 // b1 import anh
 export const APP_DATA = {
     YOUTUBE_URL: "",
@@ -95,22 +93,23 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
-    {
+{
         id: 1,
-        imgPath: reactNativeImg,
+        imgPath: springRestImg,
+        title: "Job Hunting Platform",
+        description: "The project is a smart job search web platform developed using Java Spring Boot for the backend and ReactJS for the frontend. The system supports role-based user access (candidates, employers, administrators), job searching with multiple filters, and secure authentication using JWT. Users can subscribe to receive job notifications via email based on their preferences, allowing them to quickly access suitable opportunities. The interface is designed to be modern, visually appealing, and user-friendly. This is the admin account to access the management page (admin@gmail.com || pasword:123456)",
+        githubLink: "https://github.com/TranPhuDev/fullstack-job",
+        demoLink: "http://itjob.click/"
+    },
+    {
+        id: 2,
+        imgPath: reactJsImg,
         title: "Book WebSite",
         description: "The online book selling website project is developed using React and TypeScript, providing a modern and convenient shopping experience for users. The website provides many features such as searching, filtering books by category, price range and sorting by popularity or price. Users can view product details, reviews, add to cart and checkout easily. With a friendly interface and high performance, the project aims to create a reliable and convenient online book shopping platform.",
         githubLink: "https://github.com/chauphuxd/book-fe",
         demoLink: "https://book-store-six-xi.vercel.app/"
-    },
-    {
-        id: 2,
-        imgPath: springRestImg,
-        title: "Laptop Shop",
-        description: "Developed an e-commerce website for selling laptops with key features such as product browsing, shopping cart, order placement, and order management. Integrated VNPAY payment gateway, enabling customers to make secure and fast online payments.Implemented Google login (OAuth2) to allow users to easily register and log in with their Google accounts.Built an Admin Dashboard for managing products, orders, and users efficiently.",
-        githubLink: "https://github.com/TranPhuDev/java-spring-mvc",
-        demoLink: "https://hotel-fe.dzfullstack.edu.vn/"
-    },
+    }
+
     
 ]
 

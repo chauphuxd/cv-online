@@ -37,8 +37,8 @@ const HeroRight = () => {
                         <span>{"', '"}</span> */}
                         {/* <span >NestJS</span>
                         <span>{"', '"}</span> */}
-                        {/* <span >Laravel</span> */}
-                        {/* <span>{"', '"}</span> */}
+                        <span >Spring Boot</span>
+                        <span>{"', '"}</span>
                         <span >SQL</span>
                         <span>{"', '"}</span>
                         <span >Java</span>
